@@ -1,0 +1,21 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image-1 {
+  background-image: url('../assets/images/bg-image.jpg');
+  height: 100vh;
+}
+
+.buton {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-weight: 700;
+}
