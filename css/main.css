@@ -1,5 +1,29 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background: linear-gradient(#530060, #e50a89);
+}
+
+/* splash screen*/
+
+.loading-splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#530060, #e50a89);
+  z-index: 999;
+}
+
+.loading-splash.loaded {
+  opacity: 0;
+}
+
+.container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .bg-image {
