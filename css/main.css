@@ -1,6 +1,15 @@
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+.background-pink {
   background: linear-gradient(#530060, #e50a89);
+  background-size: cover;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* splash screen*/
@@ -30,16 +39,30 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
 }
 
 .bg-image-1 {
-  background-image: url('../assets/images/bg-image.jpg');
   height: 100vh;
+  background-image: url('../assets/images/bg-image.jpg');
 }
 
 .buton {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+}
+
+.buton a {
   background-color: transparent;
   border-color: white;
   color: white;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.buton a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #e50a89;
+  border: 1px solid #e50a89;
 }
