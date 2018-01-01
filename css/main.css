@@ -1,9 +1,13 @@
+:root {
+  --pink: #e50a89;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
 
 .background-pink {
-  background: linear-gradient(#530060, #e50a89);
+  background: linear-gradient(#530060, var(--pink));
   background-size: cover;
 }
 
@@ -20,7 +24,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(#530060, #e50a89);
+  background: linear-gradient(#530060, var(--pink));
   z-index: 999;
 }
 
@@ -56,26 +60,43 @@ body {
 .buton a {
   background-color: transparent;
   border-color: white;
+  margin-bottom: 10px;
+}
+
+.text-white {
   color: white;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .buton a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: #e50a89;
-  border: 1px solid #e50a89;
+  border: 1px solid var(--pink);
 }
 
 .return {
-  color: #e50a89;
+  color: var(--pink);
   padding: 10px;
   font-size: 25px;
   display: flex;
 }
 
+.return span {
+  border: 2px solid var(--pink);
+  border-radius: 50%;
+  padding: 5px;
+}
+
 .return:hover {
-  color: #e50a89;
+  color: var(--pink);
+}
+
+.fa.icon {
+  display: table-cell;
+}
+
+input.form-control.input-name {
+  width: 50%;
 }
 
 .form-control {
@@ -89,5 +110,49 @@ body {
 }
 
 .inline {
-  display: inline;
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.bt-pink {
+  background-color: var(--pink);
+  color: #fff;
+  font-weight: 700px;
+  font-size: 20px; 
+}
+
+.bt-pink:hover {
+  background-color: #ff00c3;
+  color: white;
+}
+
+.mt {
+  margin-top: 150px;
+}
+
+.sp {
+  font-size: 10px;
+}
+
+span.sp {
+  margin: 5px 0;
+}
+
+.resend {
+  margin: 10px 0;
+  font-weight: 700px;
+  font-size: 20px;
+}
+
+.resend:hover {
+  background-color: var(--pink);
+  color: #fff;
+}
+
+.col-xs-12.input-group {
+  margin-top: 20px;
+  padding: 0 10px;
 }
