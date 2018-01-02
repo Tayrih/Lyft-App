@@ -26,32 +26,33 @@
           <h3 class="text-center">Join now for free ride credit</h3>
           <hr>
         </div>
+      </div>
     </section>
     <form class="container-flex-column text-center">
       <div class="col-xs-12 input-group">
         <i class="fa fa-user input-group-addon icon" aria-hidden="true"></i>
-        <input type="text" class="form-control input-name" placeholder="Firstname">
-        <input type="text" class="form-control input-name" placeholder="Last Name">
+        <input type="text" class="form-control input-name" id="first-name" placeholder="Firstname">
+        <input type="text" class="form-control input-name" id="last-name" placeholder="Last Name">
       </div>
       <div class="col-xs-12 input-group">
         <i class="fa fa-envelope-o input-group-addon icon" aria-hidden="true"></i>
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email">
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> I agree to Lyft's Terms of Service
+          <input type="checkbox" id="check"> I agree to Lyft's Terms of Service
         </label>
-      </div>  
+      </div>
       <div class="row">
         <div class="col-xs-12 mt">
-          <button  class="btn btn-block bt-pink" disabled>Next</button>
+          <button class="btn btn-block bt-pink" id="button-register" disabled>Next</button>
         </div>
       </div>
     </form>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../js/app.js"></script>
+  <script src="../js/register.js"></script>
 </body>
 
 </html>
